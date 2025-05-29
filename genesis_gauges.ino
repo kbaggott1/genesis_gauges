@@ -5,13 +5,13 @@
 // SETTINGS =========================================================================================
 
 // The voltage reading from the pressure sensor to activate boost mode on the gauges.
-float VOLTAGE_THRESHOLD_UPPER = 1.2;
+const float VOLTAGE_THRESHOLD_UPPER = 1.2;
 
 // The voltage reading from the pressure sensor to deactivate boost mode on the gauges.
-float VOLTAGE_THRESHOLD_LOWER = 0.8;
+const float VOLTAGE_THRESHOLD_LOWER = 0.8;
 
 // The time in seconds the gauges will remain in boost mode AFTER the lower voltage threshold was hit.
-float GAUGE_DELAY_IN_S = 1.0;
+const float GAUGE_DELAY_IN_S = 1.0;
 
 // The number of times the gauges will flash when entering boost mode.
 const char NUM_FLASHES = 2;
