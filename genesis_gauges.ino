@@ -27,7 +27,7 @@ bool default_on_blue = true;
 unsigned long previous_time = 0;
 bool is_red = false; 
 
-bool last_switch_state = HIGH;
+bool last_switch_state = LOW;
 unsigned long last_switch_change_time = 0;
 const unsigned long DEBOUNCE_DELAY_MS = 50;
 
@@ -79,18 +79,15 @@ void handle_switch() {
   }
 
   if ((millis() - last_switch_change_time) > DEBOUNCE_DELAY_MS) {
-    if (current_switch_state != default_on_blue) {
       default_on_blue = (current_switch_state == HIGH);
 
-      // turn_red() turns blue now
       if (is_red)
-        turn_red();
-      else
         turn_blue();
+      else
+        turn_red();
     }
 
     last_switch_state = current_switch_state;
-  }
 }
 
 void loop() {
@@ -110,7 +107,7 @@ void loop() {
     previous_time = millis();
   } 
   else {
-    if ((millis() - previous_time) <= GAUGE_DELAY_IN_S * 1000) {
+    if (has_flashed && (millis() - previous_time) <= GAUGE_DELAY_IN_S * 1000) {
       turn_red();
     } 
     else {
