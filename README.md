@@ -65,7 +65,6 @@ You can change the pin numbers so long as the pressure sensor (boost sensor) goe
 
 The SPDT switch flips the meaning of "default" color.
 
----
 
 ## 📦 Installation
 
@@ -74,4 +73,11 @@ The SPDT switch flips the meaning of "default" color.
 3. Connect the analog sensor and test voltage thresholds
 4. Toggle the switch to set your preferred resting color
 
----
+
+
+## Photos
+
+### Old gauges:
+![Old gauges](image.png)
+
+### New gauges when turbo spools
