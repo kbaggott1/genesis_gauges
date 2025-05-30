@@ -1,6 +1,6 @@
 # Genesis Gauges
 
-This project allows your aftermarket automotive gauges to dynamically change LED colors based on turbo boost levels. It was built for a **Hyundai Genesis Coupe**, but can be adapted for any vehicle with compatible 12V analog gauges and a turbo pressure sensor.
+This project allows your aftermarket [ProSport Evo gauges](https://prosportgauges.com/collections/52mm-evo-series-red-blue) to dynamically change LED colors based on turbo boost levels. It was built for a **Hyundai Genesis Coupe BK2**.
 
 ## 📋 Overview
 
