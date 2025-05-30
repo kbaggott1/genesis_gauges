@@ -27,6 +27,10 @@ bool default_on_blue = true;
 unsigned long previous_time = 0;
 bool is_red = false; 
 
+bool last_switch_state = LOW;
+unsigned long last_switch_change_time = 0;
+const unsigned long DEBOUNCE_DELAY_MS = 50;
+
 // Helper Functions =================================================================================
 
 void set_color(bool red) {
@@ -67,7 +71,28 @@ void setup() {
   Serial.begin(9600);
 }
 
+void handle_switch() {
+  bool current_switch_state = digitalRead(SWITCH_DEFAULT_COLOR_PIN);
+
+  if (current_switch_state != last_switch_state) {
+    last_switch_change_time = millis();
+  }
+
+  if ((millis() - last_switch_change_time) > DEBOUNCE_DELAY_MS) {
+      default_on_blue = (current_switch_state == HIGH);
+
+      if (is_red)
+        turn_blue();
+      else
+        turn_red();
+    }
+
+    last_switch_state = current_switch_state;
+}
+
 void loop() {
+  handle_switch();
+
   int analog_value = analogRead(TURBO_PIN);
   float voltage = analog_value * (5.0 / 1023.0);
   Serial.println(voltage);
