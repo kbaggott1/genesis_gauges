@@ -1,3 +1,5 @@
+// PIN DEFINITIONS ==================================================================================
+
 #define RELAY_PIN 4
 #define SWITCH_DEFAULT_COLOR_PIN 3
 #define TURBO_PIN A5
