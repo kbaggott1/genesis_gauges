@@ -82,7 +82,7 @@ void loop() {
     previous_time = millis();
   } 
   else {
-    if ((millis() - previous_time) <= GAUGE_DELAY_IN_S * 1000) {
+    if (has_flashed && (millis() - previous_time) <= GAUGE_DELAY_IN_S * 1000) {
       turn_red();
     } 
     else {
