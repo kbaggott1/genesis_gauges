@@ -1,5 +1,5 @@
 #define RELAY_PIN 4
-#define SWITCH_DEFAULT_COLOR 3
+#define SWITCH_DEFAULT_COLOR_PIN 3
 #define TURBO_PIN A5
 
 // SETTINGS =========================================================================================
@@ -44,9 +44,9 @@ void turn_red() {
 
 void setup() {
   pinMode(RELAY_PIN, OUTPUT);
-  pinMode(SWITCH_DEFAULT_COLOR, INPUT_PULLUP);
+  pinMode(SWITCH_DEFAULT_COLOR_PIN, INPUT_PULLUP);
 
-  int switch_state = digitalRead(SWITCH_DEFAULT_COLOR);
+  int switch_state = digitalRead(SWITCH_DEFAULT_COLOR_PIN);
   default_on_blue = (switch_state == HIGH);
 
   turn_blue();
@@ -69,7 +69,7 @@ void loop() {
   int analog_value = analogRead(TURBO_PIN);
   float voltage = analog_value * (5.0 / 1023.0);
 
-  int switch_state = digitalRead(SWITCH_DEFAULT_COLOR);
+  int switch_state = digitalRead(SWITCH_DEFAULT_COLOR_PIN);
   default_on_blue = (switch_state == HIGH);
 
   Serial.println(voltage);
