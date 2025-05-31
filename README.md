@@ -46,8 +46,8 @@ Boost mode is detected via a pressure sensor that outputs an analog voltage. Whe
 #define SWITCH_DEFAULT_COLOR_PIN 3     // Reads toggle switch state
 #define TURBO_PIN A5                   // Analog input from pressure sensor
 
-const float VOLTAGE_THRESHOLD_UPPER = 1.2; // Boost mode activation
-const float VOLTAGE_THRESHOLD_LOWER = 0.8; // Boost mode deactivation
+const float VOLTAGE_ACTIVATE_BOOST_MODE = 1.2; // Boost mode activation
+const float VOLTAGE_DEACTIVATE_BOOST_MODE = 0.8; // Boost mode deactivation
 const float GAUGE_DELAY_IN_S = 1.0;        // Hold boost color for 1s after drop (enables time for shifting)
 const char NUM_FLASHES = 2;                // Number of flashes when entering boost mode
 const int FLASH_DELAY_IN_MS = 100;         // Flash speed
@@ -80,10 +80,10 @@ The SPDT switch flips the meaning of "default" color.
 ### [CLICK HERE TO WATCH A YOUTUBE SHORT OF THE GAUGES IN BOOST MODE](https://youtube.com/shorts/WwIG0MZKIqI?si=IdPgYT5u425USww5)
 
 ### Old gauges:
-![Old gauges](resources/image.png)
+![Old gauges](resources/old_gauges.png)
 
 ### New gauges when turbo spools
-![New gauges](resources/image-1.png)
+![New gauges](resources/new_gauges.png)
 
 ### Computer Enclosure
 ![Opened enclosure](resources/box_internals.png)
