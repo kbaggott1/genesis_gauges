@@ -78,9 +78,10 @@ The SPDT switch flips the meaning of "default" color.
 ## Photos
 
 ### Old gauges:
-![Old gauges](image.png)
+![Old gauges](resources/image.png)
 
 ### New gauges when turbo spools
-![alt text](image-1.png)
+![New gauges](resources/image-1.png)
 
 ### Boost mode video
+![Video](resources/boost_mode.mp4)
