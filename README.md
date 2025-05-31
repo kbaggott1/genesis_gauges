@@ -84,4 +84,4 @@ The SPDT switch flips the meaning of "default" color.
 ![New gauges](resources/image-1.png)
 
 ### Boost mode video
-![Video](resources/20250530_193756.mp4)
+![Video](resources/c06b-1f2d-4f8a-ac14-8d1aead3dc58.mp4)
