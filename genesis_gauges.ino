@@ -14,7 +14,7 @@ const float VOLTAGE_DEACTIVATE_BOOST_MODE = 0.8;
 const float GAUGE_DELAY_IN_S = 1.0;
 
 // The number of times the gauges will flash when entering boost mode.
-const char NUM_FLASHES = 2;
+const char NUM_FLASHES = 3;
 
 // The time in milliseconds a color will be held in flash mode.
 const int FLASH_DELAY_IN_MS = 100;
