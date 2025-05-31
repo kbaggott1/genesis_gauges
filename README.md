@@ -82,10 +82,10 @@ The SPDT switch flips the meaning of "default" color.
 ### Old gauges:
 ![Old gauges](resources/old_gauges.png)
 
-### New gauges when turbo spools
+### New gauges:
 ![New gauges](resources/new_gauges.png)
 
-### Computer Enclosure
+### Computer Enclosure:
 ![Opened enclosure](resources/box_internals.png)
 
 ![Closed enclosure](resources/box.png)
