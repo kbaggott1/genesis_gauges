@@ -84,4 +84,5 @@ The SPDT switch flips the meaning of "default" color.
 ![New gauges](resources/image-1.png)
 
 ### Boost mode video
-![Video](resources/boost_mode.mp4)
+
+<video src='resources/boost_mode.mp4' width=480/>
