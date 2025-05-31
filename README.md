@@ -77,7 +77,7 @@ The SPDT switch flips the meaning of "default" color.
 
 ## Photos and Video
 
-### [Click here to see a youtube short of boost mode!](https://youtube.com/shorts/WwIG0MZKIqI?si=IdPgYT5u425USww5)
+### [CLICK HERE TO WATCH A YOUTUBE SHORT OF THE GAUGES IN BOOST MODE](https://youtube.com/shorts/WwIG0MZKIqI?si=IdPgYT5u425USww5)
 
 ### Old gauges:
 ![Old gauges](resources/image.png)
